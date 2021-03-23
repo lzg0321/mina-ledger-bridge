@@ -41,8 +41,9 @@ export default class LedgerBridge {
   async unlock (replyAction, hdPath) {
     try {
       await this.makeApp()
+      console.log('get address')
       const res = await this.app.getAddress(0)
-
+      console.log('get address res', res)
       this.sendMessageToExtension({
         action: replyAction,
         success: true,
