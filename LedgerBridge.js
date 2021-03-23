@@ -1,4 +1,4 @@
-import Transport from "@ledgerhq/hw-transport-u2f";
+import Transport from "@ledgerhq/hw-transport-webusb";
 import {MinaLedgerJS} from "mina-ledger-js";
 export default class LedgerBridge {
   constructor() {
