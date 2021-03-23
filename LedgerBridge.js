@@ -1,4 +1,4 @@
-import Transport from "@ledgerhq/hw-transport-webusb";
+import Transport from "@ledgerhq/hw-transport-u2f";
 import {MinaLedgerJS} from "mina-ledger-js";
 export default class LedgerBridge {
   constructor() {
@@ -25,8 +25,11 @@ export default class LedgerBridge {
   }
   async makeApp () {
     try {
+      console.log('make app')
       this.transport = await Transport.create()
+      console.log('transport', this.transport)
       this.app = new MinaLedgerJS(this.transport)
+      console.log('mina app', this.app)
     } catch (e) {
       console.log('LEDGER:::CREATE APP ERROR', e)
     }
