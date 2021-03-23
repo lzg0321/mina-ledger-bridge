@@ -856,10 +856,20 @@
     rxjs "^6.6.6"
     semver "^7.3.4"
 
-"@ledgerhq/errors@^5.46.0":
+"@ledgerhq/errors@^5.34.0", "@ledgerhq/errors@^5.46.0":
   version "5.46.0"
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-5.46.0.tgz#573e1c758dce36acf5f414278d8b5970f45fe2b8"
   integrity sha512-1/q/Tqv+aznX/rO3kdpg3Hv7O3xv68dWHkcfai8BZGTdTIwh6vdguFsdUNJ7eiNxEMKNA9gU+p78ZS/PDzoitQ==
+
+"@ledgerhq/hw-transport-u2f@^5.36.0-deprecated":
+  version "5.36.0-deprecated"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-u2f/-/hw-transport-u2f-5.36.0-deprecated.tgz#66e3ed399a117a1c0110871a055dd54f5fe707fd"
+  integrity sha512-T/+mGHIiUK/ZQATad6DMDmobCMZ1mVST952009jKzhaE1Et2Uy2secU+QhRkx3BfEAkvwa0zSRSYCL9d20Iqjg==
+  dependencies:
+    "@ledgerhq/errors" "^5.34.0"
+    "@ledgerhq/hw-transport" "^5.34.0"
+    "@ledgerhq/logs" "^5.30.0"
+    u2f-api "0.2.7"
 
 "@ledgerhq/hw-transport-webusb@^5.46.0":
   version "5.46.0"
@@ -871,7 +881,7 @@
     "@ledgerhq/hw-transport" "^5.46.0"
     "@ledgerhq/logs" "^5.46.0"
 
-"@ledgerhq/hw-transport@^5.46.0":
+"@ledgerhq/hw-transport@^5.34.0", "@ledgerhq/hw-transport@^5.46.0":
   version "5.46.0"
   resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport/-/hw-transport-5.46.0.tgz#b4ad6432b8aef29069554c8d2d5d095f26719bbc"
   integrity sha512-iROB4eowxR7Bg67MEH+OlIsfN+UIjNLULr+A74gEFtMpHB3jvVc/aeq2gezv4fIueQQWV9X5IgNsxkPBI0vgtw==
@@ -880,7 +890,7 @@
     "@ledgerhq/errors" "^5.46.0"
     events "^3.3.0"
 
-"@ledgerhq/logs@^5.46.0":
+"@ledgerhq/logs@^5.30.0", "@ledgerhq/logs@^5.46.0":
   version "5.46.0"
   resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-5.46.0.tgz#fc850416716d77090c1c5a8c186118561fbd8d8b"
   integrity sha512-WiFy1uwRhcqkj6aTSha532Nl6Gdsv5GN+Nsbp7pY66Zg+6WUE/SBmpwHEJfEXzEfARI5+A718a3trGinY6Dftg==
@@ -3648,6 +3658,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+u2f-api@0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/u2f-api/-/u2f-api-0.2.7.tgz#17bf196b242f6bf72353d9858e6a7566cc192720"
+  integrity sha512-fqLNg8vpvLOD5J/z4B6wpPg4Lvowz1nJ9xdHcCzdUPKcFE/qNCceV2gNZxSJd5vhAZemHr/K/hbzVA0zxB5mkg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

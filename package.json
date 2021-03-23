@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@ledgerhq/hw-transport-u2f": "^5.36.0-deprecated",
     "@ledgerhq/hw-transport-webusb": "^5.46.0",
     "mina-ledger-js": "^1.0.4"
   },
